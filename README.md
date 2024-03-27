@@ -107,7 +107,7 @@ Here is great article for filement calibration: https://www.obico.io/blog/orcasl
 ## Limitations
 
 - The software doesn't generate preview images inserted in the G-code that QIDI can understand. Consequently, QIDI makes its proprietary thumbnail format. I'm unsure of how to generate thumbnails specifically for QIDI.
-- g-code is not compressed before send to the printer. Again, QIDI uses proprietary compression format to compress gcode files which is named by the `.gcode.tz` extension. Yes,  compression format differs from the 'tz' file format used by Linux.
+- Once again, QIDI uses a proprietary compression format to compress gcode files, which are named with the `.gcode.tz` extension. Yes, this compression format differs from the 'tz' file format used by Linux. Therefore, the application uses QIDI's command line utility `VC_compress_gcode` to compress `.gcode` files before sending them to the printer. Consequently, I can't control the compression action behavior.
 
 
 
