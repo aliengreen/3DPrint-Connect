@@ -88,7 +88,7 @@ G1 X5 E0 F2400
 
 
 
-#### Clibration / Flow Rate
+#### Calibration / Flow Rate
 
 Flow rate regulates the filament extrusion from the nozzle, ensuring optimal printing quality by adjusting the material flow according to its melting characteristics. 
 
@@ -106,6 +106,7 @@ Here is great article for filement calibration: https://www.obico.io/blog/orcasl
 
 ## Limitations
 
+- The application is only available for macOS as a Universal build, which can run on both Intel and Apple Silicon processors.
 - The software doesn't generate preview images inserted in the G-code that QIDI can understand. Consequently, QIDI makes its proprietary thumbnail format. I'm unsure of how to generate thumbnails specifically for QIDI.
 - Once again, QIDI uses a proprietary compression format to compress gcode files, which are named with the `.gcode.tz` extension. Yes, this compression format differs from the 'tz' file format used by Linux. Therefore, the application uses QIDI's command line utility `VC_compress_gcode` to compress `.gcode` files before sending them to the printer. Consequently, I can't control the compression action behavior.
 
@@ -117,3 +118,4 @@ Here is great article for filement calibration: https://www.obico.io/blog/orcasl
 - https://github.com/yandreev3/3dWiFiSend?tab=readme-ov-file
 - https://github.com/mriscoc/Ender3V2S1/wiki/How-to-generate-a-gcode-preview
 - https://www.reddit.com/r/QidiTech3D/comments/17apxx5/qidi_proprietary_thumbnail_format/
+- https://github.com/Spanni26/ChituCodeWriter
